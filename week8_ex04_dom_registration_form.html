@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      input {
+        margin-bottom: 5px;
+      }
+      .error {
+        color: red;
+        font-size: 16px;
+        margin-bottom: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Account Registration</h1>
+
+    <div id="formMessage"></div>
+
+    <form id="registrationForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" />
+
+      <div id="usernameError" class="error"></div>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" novalidate />
+
+      <div id="emailError" class="error"></div>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+
+      <div id="passwordError" class="error"></div>
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" />
+
+      <div id="confirmError" class="error"></div>
+
+      <button type="submit" id="submitButton">Register</button>
+    </form>
+    <script src="week8_ex04_dom_registration_form.js"></script>
+  </body>
+</html>
