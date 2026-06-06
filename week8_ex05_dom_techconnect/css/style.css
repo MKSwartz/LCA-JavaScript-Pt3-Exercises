@@ -1,0 +1,116 @@
+.card {
+  border: none;
+  border-radius: 15px;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto 0;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #28a745;
+}
+
+.card-body {
+  text-align: center;
+  padding: 20px;
+}
+
+.card-text .badge {
+  margin: 3px;
+  padding: 5px 10px;
+  font-size: 0.75rem;
+}
+
+.toggle-hire-btn {
+  margin-top: 10px;
+  width: 100%;
+}
+
+header {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-bottom: 4px solid #28a745;
+}
+
+header h1 i {
+  color: #28a745;
+  margin-right: 10px;
+}
+
+/* Search bar */
+.input-group-text {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+#searchInput {
+  border-left: none;
+}
+
+#searchInput:focus {
+  border-color: #28a745;
+  box-shadow: none;
+}
+
+/* Counter */
+.alert-info {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.alert-info strong {
+  color: #ffd700;
+}
+
+/* Buttons */
+.btn-success {
+  background-color: #28a745;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 20px;
+}
+
+.btn-outline-primary {
+  border-radius: 25px;
+  border-width: 2px;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card:hover {
+    transform: none;
+  }
+
+  .alert-info {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 6px 15px;
+  }
+}
+
+/* Placeholder img (for when placehold.co is blocked) */
+.card img[src*="placehold.co"] {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
